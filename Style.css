@@ -391,36 +391,135 @@ nav {
 
 
 /* =========================
-   MOBILE
+   MOBILE RESPONSIVE
 ========================= */
 
 @media (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    /* NAVBAR */
     nav {
         width: calc(100% - 30px);
         margin: 15px;
-        flex-direction: column;
+        padding: 10px;
         gap: 10px;
     }
 
     .nav-links {
-        flex-wrap: wrap;
+        width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 70px 15px;
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* SECTION HEADINGS */
+    #about > h2,
+    #what-i-do > h2,
+    #skills > h2,
+    #projects > h2,
+    #education > h2,
+    #contact > h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    /* ABOUT */
+    #about {
+        width: 100%;
+    }
+
+    .about-card {
+        width: 100%;
+        padding: 25px;
+    }
+
+    /* WHAT I DO */
+    #what-i-do {
+        width: 100%;
     }
 
     .what-card {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
-    .project-card {
-        width: 90%;
+    .work-item {
+        width: 100%;
+        padding: 22px;
+    }
+
+    /* SKILLS */
+    #skills {
+        width: 100%;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .skill-card {
-        width: 160px;
+        width: 100%;
+        max-width: 400px;
+        padding: 25px;
+    }
+
+    /* PROJECTS */
+    #projects {
+        width: 100%;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* CONTACT */
+    #contact {
+        width: 100%;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        width: 100%;
     }
 }
